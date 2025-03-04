@@ -14,7 +14,7 @@ This repository contains the source code for my personal portfolio website. It i
 - JavaScript
 
   ## Live Demo
-  Cheeck out the live verison of the portfolio [here](https://robertwilliams-portfolio.vercel.app/).
+  Check out the live version of the portfolio [here](https://robertwilliams-portfolio.vercel.app/).
 
   ## Getting Started
 
