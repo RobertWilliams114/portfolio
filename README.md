@@ -1,41 +1,76 @@
-# Portfolio Website
+## Portfolio Website (mern_portfolio)
 
-This repository contains the source code for my personal portfolio website. It is built using HTML, CSS, and JavaScript and serves as a showcase for my projects, skills, and professional experiences.
+# MERN Portfolio Website
 
-## Features
-- **Responsive Design:** Optimized for mobile, tablet, and desktop.
-- **Modern UI/UX:** Clean layout with smooth animations.
-- **Project Showcase:** Detailed project pages with images and descriptions.
-- **Contact Form:** integrated form for visitors to reach out.
+A full-stack portfolio showcasing my projects, skills, and professional experiences. This application is built with modern web technologies to deliver a fast, responsive, and maintainable user experience.
 
-** Technologies Used
-- HTML5
-- CSS3 (Flexbox, Grid)
-- JavaScript
+### 🚀 Live Demo
+[View the live site on Vercel](https://robertwilliams-portfolio.vercel.app)
 
-  ## Live Demo
-  Check out the live version of the portfolio [here](https://robertwilliams-portfolio.vercel.app/).
+---
 
-  ## Getting Started
+## 📂 Project Structure
 
-  ### Prerequisites
-  All you need is a modern web browser. For local development, a static server is recommended.
+```bash
+mern_portfolio/
+├── client/           # React frontend (create-react-app)
+├── server/           # Express backend API
+├── .env              # Environment configurations
+├── package.json      # Scripts & dependencies (client + server)
+└── README.md         # Project overview
+```
 
-  ### Installation
-  1. Clone the repository:
-  ```bash
-  git clone https://github.com/RobertWilliams114/portfolio.git
-  ```
-  
-  2. Navigate to the project directory:
-  ```bash
-  cd portfolio
-  ```
+---
 
-  3. Open index.html in your web browser or run a local server (e.g., using VSCode Live Server or Python's http.server).
+## 🔨 Technologies & Why I Chose Them
 
- ## Customization
- Feel free to modify the content, styles, and layout to fit your needs.
+- **React**: Component-driven UI, easy state management with hooks, and a thriving ecosystem (Create React App for rapid setup).
+- **Node.js & Express**: Lightweight, performant server to handle API routes; aligns seamlessly with JavaScript stack.
+- **MongoDB & Mongoose**: Flexible NoSQL database for storing contact submissions and project metadata; Mongoose ODM for schema modeling.
+- **CORS & dotenv**: Secure environment variable management and cross-origin request handling between client and server.
+- **Concurrently**: Run client and server in development mode with a single command (`npm run dev`).
+- **Heroku & Vercel**: Automated deployment pipelines for backend (Heroku) and frontend (Vercel) to ensure CI/CD and zero-downtime updates.
 
- ## Thank You
- Thank you for reading. I hope that you learned something new or gained something of value.
+---
+
+## ✨ Features
+
+- **Responsive Design**: Mobile-first layout using CSS Flexbox and Grid for seamless viewing on any device.
+- **Modern UI/UX**: Smooth animations powered by React Spring and styled-components for maintainable styling.
+- **Dynamic Project Showcase**: Fetches project data from server; easily add new projects without manual HTML updates.
+- **Contact Form**: Email integration with Nodemailer to receive inquiries directly in my inbox.
+
+---
+
+## ⚙️ Setup & Development
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/RobertWilliams114/portfolio.git
+
+# 2. Install dependencies
+npm install
+npm run client-install
+
+# 3. Configure environment variables
+# Create .env with:
+#   MONGO_URI=<your_mongo_uri>
+
+# 4. Start in development mode
+npm run dev
+```
+
+---
+
+## 🎯 Deployment
+
+- **Production Build**: `npm run build` in the client directory produces optimized static files.
+- **Heroku Postbuild**: Automatically installs client dependencies and builds during deployment (`heroku-postbuild`).
+
+---
+
+## 🙏 Acknowledgements
+
+- Inspired by the MERN Boilerplate projects and React community best practices.
+
+---
