@@ -5,7 +5,7 @@ function LeftSider() {
     <div className="fixed left-0 bottom-0 px-10 sm:static">
       <div className="flex flex-col items-center">
         <div className="flex flex-col gap-3 sm:flex-row sm:py-10">
-          <a href="https://robertwilliams.onrender.com/resume">
+          <a href="/Robert_Williams_Resume.pdf" target="_blank" rel="noopener noreferrer">
             <i class="ri-article-line text-[#8E99E3] text-xl"></i>
           </a>
           <a href="https://www.linkedin.com/in/robert-williams-503165236/">
