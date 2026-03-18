@@ -7,6 +7,7 @@ import AdminExperiences from "./AdminExperiences";
 import { useSelector } from "react-redux";
 import AdminProjects from "./AdminProjects";
 import AdminContact from "./AdminContact";
+import AdminOrganizations from "./AdminOrganizations";
 const { TabPane } = Tabs;
 
 function Admin() {
@@ -59,8 +60,13 @@ function Admin() {
               <AdminProjects />
             </TabPane>
             <TabPane
-              tab="Contact"
+              tab="Organizations"
               key="5">
+              <AdminOrganizations />
+            </TabPane>
+            <TabPane
+              tab="Contact"
+              key="6">
               <AdminContact />
             </TabPane>
           </Tabs>

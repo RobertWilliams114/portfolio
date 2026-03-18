@@ -187,6 +187,55 @@ router.post("/update-contact", async (req, res) => {
   }
 });
 
+//Add Organization
+router.post("/add-organization", async (req, res) => {
+  try {
+    const organization = new Organization(req.body);
+    await organization.save();
+    res.status(200).send({
+      data: organization,
+      success: true,
+      message: "Organization added successfully",
+    });
+  } catch (error) {
+    res.status(500).send(error);
+  }
+});
+
+//Update Organization
+router.post("/update-organization", async (req, res) => {
+  try {
+    const organization = await Organization.findOneAndUpdate(
+      { _id: req.body._id },
+      req.body,
+      { new: true }
+    );
+    res.status(200).send({
+      data: organization,
+      success: true,
+      message: "Organization updated successfully",
+    });
+  } catch (error) {
+    res.status(500).send(error);
+  }
+});
+
+//Delete Organization
+router.post("/delete-organization", async (req, res) => {
+  try {
+    const organization = await Organization.findByIdAndDelete({
+      _id: req.body._id,
+    });
+    res.status(200).send({
+      data: organization,
+      success: true,
+      message: "Organization deleted successfully",
+    });
+  } catch (error) {
+    res.status(500).send(error);
+  }
+});
+
 //Admin Login
 router.post("/admin-login", async (req, res) => {
   try {

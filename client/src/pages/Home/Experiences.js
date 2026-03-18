@@ -25,7 +25,7 @@ function Experiences() {
                       ? "text-tertiary border-tertiary border-l-4 -ml-[3px] bg-[#1c2541] py-3 sm:w-40"
                       : "text-white"
                   } text-xl`}>
-                  {experience.period}
+                  {experience.company}
                 </h1>
               </div>
             ))}
@@ -37,6 +37,9 @@ function Experiences() {
           </h1>
           <h1 className="text-tertiary text-xl">
             {experiences[selectedItemIndex].company}
+          </h1>
+          <h1 className="text-white text-sm">
+            {experiences[selectedItemIndex].period}
           </h1>
           <p className="text-white">
             {experiences[selectedItemIndex].description}
